@@ -6,7 +6,7 @@ Created on Thu Aug 22 14:42:16 2019
 """
 
 #k_nearest_neighbour
-
+#Import the various libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -19,7 +19,7 @@ dataset = pd.read_csv('Social_Network_Ads.csv')
 X = dataset.iloc[:, [2, 3]].values
 y = dataset.iloc[:, 4].values
 
-
+# this splits the data set into test and train
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
 

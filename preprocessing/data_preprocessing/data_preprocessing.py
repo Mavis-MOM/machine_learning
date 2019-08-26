@@ -4,12 +4,12 @@ Created on Wed Aug 21 10:49:30 2019
 
 @author: kuuku
 """
-
+#Import various libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-
+# Import the dataset
 dataset = pd.read_csv('Data.csv') # to import your excel file
 X = dataset.iloc[:, :-1].values # X is the feature
 y = dataset.iloc[:, 3].values #y is the target
